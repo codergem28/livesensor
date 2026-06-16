@@ -1,0 +1,4 @@
+[ 2026-06-16 13:45:21,071 ] 23 root - INFO - Starting application
+[ 2026-06-16 13:45:21,072 ] 33 root - INFO - Starting data ingestion
+[ 2026-06-16 13:45:21,072 ] 26 root - INFO - Exporting data from mongodb to feature store
+[ 2026-06-16 13:45:21,072 ] 18 root - INFO - Retrieved MongoDB URL: mongodb+srv://sudhanshumtripathi28_db_user:Sudhanshu28@cluster0.7erlj1d.mongodb.net/?appName=Cluster0

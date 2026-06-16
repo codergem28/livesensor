@@ -1,0 +1,9 @@
+[ 2026-06-16 14:26:25,662 ] 23 root - INFO - Starting application
+[ 2026-06-16 14:26:25,663 ] 33 root - INFO - Starting data ingestion
+[ 2026-06-16 14:26:25,682 ] 29 root - INFO - Exporting data from mongodb to feature store
+[ 2026-06-16 14:26:25,682 ] 18 root - INFO - Retrieved MongoDB URL: mongodb+srv://sudhanshumtripathi28_db_user:Sudhanshu28@cluster0.7erlj1d.mongodb.net/?appName=Cluster0
+[ 2026-06-16 14:26:57,574 ] 157 root - INFO - Performed train test split on the dataframe
+[ 2026-06-16 14:26:57,574 ] 159 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-16 14:26:57,575 ] 167 root - INFO - Exporting train and test file path.
+[ 2026-06-16 14:26:58,843 ] 177 root - INFO - Exported train and test file path.
+[ 2026-06-16 14:26:59,092 ] 39 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='artifact\\06_16_2026_14_26_25\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\06_16_2026_14_26_25\\data_ingestion\\ingested\\test.csv')

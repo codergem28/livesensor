@@ -1,0 +1,17 @@
+[ 2026-06-16 19:43:45,918 ] 23 root - INFO - Starting application
+[ 2026-06-16 19:43:45,920 ] 33 root - INFO - Starting data ingestion
+[ 2026-06-16 19:43:45,955 ] 29 root - INFO - Exporting data from mongodb to feature store
+[ 2026-06-16 19:43:45,955 ] 18 root - INFO - Retrieved MongoDB URL: mongodb+srv://sudhanshumtripathi28_db_user:Sudhanshu28@cluster0.7erlj1d.mongodb.net/?appName=Cluster0
+[ 2026-06-16 19:44:25,447 ] 157 root - INFO - Performed train test split on the dataframe
+[ 2026-06-16 19:44:25,448 ] 159 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-16 19:44:25,449 ] 167 root - INFO - Exporting train and test file path.
+[ 2026-06-16 19:44:27,281 ] 177 root - INFO - Exported train and test file path.
+[ 2026-06-16 19:44:27,635 ] 39 root - INFO - Data ingestion completed and artifact: DataIngestionArtifact(trained_file_path='artifact\\06_16_2026_19_43_45\\data_ingestion\\ingested\\train.csv', test_file_path='artifact\\06_16_2026_19_43_45\\data_ingestion\\ingested\\test.csv')
+[ 2026-06-16 19:44:28,320 ] 35 root - INFO - Required number of columns:164
+[ 2026-06-16 19:44:28,320 ] 36 root - INFO - data frame has columns:164
+[ 2026-06-16 19:44:28,320 ] 35 root - INFO - Required number of columns:164
+[ 2026-06-16 19:44:28,320 ] 36 root - INFO - data frame has columns:164
+[ 2026-06-16 19:44:28,320 ] 59 root - INFO - Missing numerical columns: [[]]
+[ 2026-06-16 19:44:28,320 ] 59 root - INFO - Missing numerical columns: [[]]
+[ 2026-06-16 19:44:30,239 ] 150 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=False, valid_train_file_path='artifact\\06_16_2026_19_43_45\\data_ingestion\\ingested\\train.csv', valid_test_file_path='artifact\\06_16_2026_19_43_45\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='artifact\\06_16_2026_19_43_45\\data_validation\\drift_report\\report.yaml')
+[ 2026-06-16 19:44:30,242 ] 29 root - INFO - Pipeline execution completed

@@ -22,9 +22,10 @@ if __name__ == "__main__":
     try:
         logging.info("Starting application")
 
-        pipeline = TrainingPipeline()
+        training_pipeline = TrainingPipeline()
 
-        pipeline.run_pipeline()
+        training_pipeline.run_pipeline()
+        
 
         logging.info("Pipeline execution completed")
 

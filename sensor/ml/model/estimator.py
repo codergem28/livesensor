@@ -61,7 +61,10 @@ class ModelResolver:
             timestamps = os.listdir(self.model_dir)
             if len(timestamps) == 0:
                 return False
-        
+            best_model_path = self.get_best_model_path()
+
+            return os.path.exists(best_model_path)
+
         except Exception as e:
             raise e
         

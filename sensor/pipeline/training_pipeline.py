@@ -23,6 +23,7 @@ from sensor.constant.training_pipeline import SAVED_MODEL_DIR
 
 
 class TrainingPipeline:
+    is_pipeline_running = False
 
     def __init__(self):
         self.training_pipeline_config = TrainingPipelineConfig()
@@ -129,6 +130,8 @@ class TrainingPipeline:
     
     def run_pipeline(self):
         try:
+             
+            TrainingPipeline.is_pipeline_running = True
             data_ingestion_artifact:DataIngestionArtifact = self.start_data_ingestion()
 
 
@@ -149,7 +152,9 @@ class TrainingPipeline:
             
             model_pusher_artifact = self.start_model_pusher(model_eval_artifact)
             
+            TrainingPipeline.is_pipeline_running = False
 
             
-        except Exception as e :    
+        except Exception as e :
+            TrainingPipeline.is_pipeline_running = False    
             raise  SensorException(e,sys)
